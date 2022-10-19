@@ -1,0 +1,174 @@
+/******************************************Global Styles******************************************/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    background-color: rgb(255, 255, 255);
+    padding: 0;
+    margin: 0;
+ }
+
+.container{
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+header{
+    background-color: rgb(72, 0, 189);
+    color: #e8491e;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #dbe81e 3px solid;
+}
+
+header a{
+    color: #ffffff;
+    text-decoration: underline;
+    font-size: 15px;
+}
+
+header ul{
+    margin: 0;
+    padding: 0;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding{
+    color: #ffffff;
+    float: left;
+}
+
+header #branding h1{
+    font-family: fantasy;
+    margin: 10px;
+}
+
+header nav{
+    float: right;
+    margin-top: 25px;
+}
+
+header .highlight , header .current a{
+    color: #dbe81e;
+    font-weight: bold;
+}
+
+header a:hover{
+    color: #dbe81e;
+    font-weight: bold;
+}
+
+ul{
+    margin: 100;
+    padding: 0;
+}
+
+/*Section Title*/
+#sectiontitle{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(img/upback.jpg);
+    text-align: center;
+    font-size: large;
+    color: rgb(255, 255, 255);
+    height: 300px;
+    text-shadow: #e8491d ;
+}
+
+/*NewsLetter*/
+#newsletter{
+    border-top: #dbe81e 3px solid;
+    padding: 15px;
+    color: #ffffff;
+    background-color: rgb(72, 0, 189);
+}
+
+#newsletter h1{
+    float: left;
+}
+
+#newsletter form{
+    float: right;
+    margin-top: 15px;
+    color: white;
+}
+
+#newsletter input[type="email"]{
+    padding: 4px;
+    height: 20px;
+    width: 250px;
+}
+
+/*footer*/
+footer{
+    padding: 5px;
+    margin-top: 20px;
+    color: #ffffff;
+    text-align: center;
+    background-color: #e8491e;
+}
+
+/*Purple Button*/
+.button_1{
+    font-weight: bold;
+    height: 30px;
+    background: #e8491d;
+    border: 10;
+    padding-left: 20px;
+    padding-left: 20px;
+}
+
+/*----------------------------------------------------------------------------------------------*/
+
+/*--------*/
+#ourservices{
+    min-width: none;
+    color: #e8491e;
+}
+
+.box4 p{
+    text-align: left;
+}
+
+#boxes2{
+    margin-top:20px;
+}
+
+#boxes4{
+    margin-top: 20px;
+}
+
+#boxes4 .box4 , #blogdetails .box4{
+    float: left;
+    text-align: center;
+}
+
+#boxes4 .box4 img{
+    float: center;
+}
+
+#boxes{
+    margin-top: 20px;
+}
+
+#boxes .box , #calculateprice .box{
+    text-align: center;
+}
+
+#boxes .box img ,#calculateprice .box img{
+    float: center;
+    width: 120px;
+    height: 120px;
+}
+
+#boxes h1 , #blogdetails h1{
+    text-align: center;
+}
+
+

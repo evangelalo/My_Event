@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <title>LaloCourier</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="scripts/newsletter.js"></script>
+        <style>
+            /*Web responsive for desktop*/
+            @media (min-width: 992px){
+                article#main_art{
+                    float: left;
+                    width: 30%;
+                }
+                aside#sidebar{
+                    width: 60%;
+                    float: right;
+                    font-size: medium;
+                }
+                article#main_art img{
+                    padding-left: 60px;
+                    width: 62%;
+                }
+            }
+
+            /*Web responsive for mobile-tablet*/
+            @media (max-width: 991px){
+                body{
+                    font-size: large;
+                }
+                header{
+                    font-size: large;
+                }
+                article#main_art img{
+                    padding-left: 20px;
+                    width: 80%;
+                }
+            }
+
+            /*Internal Css*/
+            #whoheader h1 , h3{
+                text-align: center;
+            }
+
+            article#main_art{
+                margin-top: 30px;
+                font-size: large;
+            }
+
+            article#main_art h1{
+                text-align: center;
+            }
+
+            aside#sidebar{
+                margin-top: 40px;
+
+            }
+
+            aside#sidebar img{
+                width: 30px;
+
+            }
+        </style>
+
+    </head>
+    <body>       
+        <header>
+            <div class="container">
+                <div id="branding">
+                    <h1><span class="highlight">Lalo</span> Courier</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Αρχική Σελίδα</a></li>
+                        <li class="current"><a href="ourcompany.html">Η εταιρεία μας</a></li>
+                        <li><a href="calcprice.html">Υπολογισμός Κόστους</a></li>
+                        <li><a href="blog.html">Το Blog μας</a></li>
+                        <li><a href="contactus.html">Επικοινωνήστε μαζί μας</a></li>
+                    </ul>
+                </nav>                
+            </div>
+        </header>
+
+        <section id="sectiontitle">
+            <div class="container">
+                <h1>Σχετικά με εμάς</span></h1>
+            </div>
+        </section>
+
+        <!--NEWSLETTER section-->
+        <section id="newsletter">
+            <div class="container">
+                <h1>Εγγραφείτε στο newsletter μας</h1>
+                <form name="newsform">
+                    <input type="email" name="email" placeholder="Enter Email">
+                    <input type="submit" value="Subscribe" class="button_1" onclick="ValidateEmail(document.newsform.email)"></input>
+                </form>
+            </div>
+        </section>
+
+        <!--Some info about the company.Image on the left and a small text on the right-->
+        <section id="whoweare">
+            <div class="container">
+                <div id="whoheader">
+                    <h1>Οι απαιτήσεις σας είναι πρόκληση για εμάς.</h1>
+                    <h3>Στην LaloCourier δουλεύουμε καθημερινά ώστε να εκπληρώνουμε τις ανάγκες των πελατών μας με το
+                        καλύτερο δυνατό αποτέλεσμα .
+                    </h3>
+                </div>
+                <article id="main_art">
+                    <img src="img/experienceship.jpg">
+                    <h1>Πολυετή εμπειρία!</h1>
+                </article>
+                <aside id="sidebar">
+                    <p>Με πάνω από 25 χρόνια διαρκούς λειτουργίας
+                    σας εγγυόμαστε υπεύθυνη εξυπηρέτηση παρέχοντας αποτελεσματικά ένα μεγάλο εύρος
+                    υπηρεσιών μεταφοράς, απευθυνόμενη τόσο σε ιδιώτες όσο και σε επαγγελματίες
+                    . Η διαρκής επιτύχια μας οφείλεται στο έμπειρο και 
+                    άρτια καταρτισμένο προσωπικό μας.</p>
+                </aside>
+            </div>
+            <div class="container">
+                <article id="main_art">
+                    <img src="img/priceship.png">
+                    <h1>Ασυναγώνιστες τιμές!</h1>
+                </article id="main_art">
+                <aside id="sidebar">
+                    <p>Παρέχουμε πακέτα που ανταποκρίνονται σε κάθε ιδιώτη αλλά και επαγγελματία.</p>
+                </aside>
+            </div>
+            <div class="container">
+                <article id="main_art">
+                    <img src="img/callship.jpg">
+                    <h1>Μάθε που βρίσκεται κάθε στιγμή!</h1>
+                </article>
+                <aside id="sidebar">
+                    <p>Άμεσος έλεγχος της κατάστασης της μεταφοράς σας με μια απλή επικοινωνία με εμάς!</p>
+                </aside>
+            </div>
+            <div class="container">
+                <article id="main_art">
+                    <img src="img/safeship2.jpg">
+                    <h1>Ασφαλής και γρήγορες αποστολές!</h1>
+                </article>
+                <aside id="sidebar">
+                    <p>Η ασφάλεια των αποστολών σας αποτελεί προτέρημα για εμάς. Τοποθετούμε τα δέματά σας με
+                        τη μέγιστη δυνατή προσοχή σε premium συσκευασίες έτσι ώστε να διασφαλίσουμε την άριστη
+                        και ταχύτατη μεταφορά για εσάς.</p>
+                </aside>
+            </div>
+            <div class="container">
+                <article id="main_art">
+                    <img src="img/image22.jpeg">
+                    <h1>Διεθνής αποστολές!</h1>
+                </article>
+                <aside id="sidebar">
+                    <p>Η εταιρεία μας χάρις τις πληθώρες συνεργασίες της με διεθνής ταχυμεταφορικές
+                         σας εξασφαλίζει εγγυημένες και ασφαλέις
+                        παραδόσεις σε κάθε γωνιά του κόσμου. </p>
+                </aside>
+            </div>
+            <div class="container">
+                <article id="main_art">
+                    <img src="img/checkbox.png">
+                </article>
+                <aside id="sidebar">
+                    <p><img src="img/checkbox2.png">Ταχύτητα</p>
+                    <p><img src="img/checkbox2.png">Ασφάλεια</p>
+                    <p><img src="img/checkbox2.png">Συνέπεια</p>
+                    <p><img src="img/checkbox2.png">Υπευθυνότητα</p>
+                    <p><img src="img/checkbox2.png">Αξιοπιστία</p>
+                </aside>
+            </div>
+        </section>
+
+        <!--html footer-->
+        <footer>
+            <p>Lalogiannis Web Design, Copyright &copy; 2021</p>
+        </footer>
+    </body>

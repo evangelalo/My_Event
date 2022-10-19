@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <title>LaloCourier</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            /*Web responsive for desktop*/
+            @media (min-width: 992px){
+                #boxes .box{
+                    float: left;
+                    width: 30%;
+                    padding: 10px;               
+                }
+                #boxes .box img{
+                    width: 90px;
+                    height: 90px;
+                }
+                #gmaps{
+                    margin-top: 20px;
+                    margin-left: 250px;
+                }
+            }
+            /*Web responsive for mobile - tablet*/
+            @media (max-width: 991px){
+                body{
+                    font-size: large;
+                }
+                header{
+                    font-size: large;
+                }
+            }
+
+            /*Internal Css*/
+            /*-----------------HOVER------------------*/
+            #boxes .box a:link{
+                color: green; 
+                background-color: transparent; 
+                text-decoration: none;
+            }
+                
+            #boxes .box a:visited{
+                color: pink;
+                background-color: transparent;
+                text-decoration: none;
+            }
+                
+            #boxes .box a:hover{
+                color: red;
+                background-color: transparent;
+                text-decoration: underline;
+            }
+                
+            #boxes .box a:active{
+                color: yellow;
+                background-color: transparent;
+                text-decoration: underline;
+            }
+
+            #contactform{
+                padding: 15px;
+            }
+
+            #contactform input{
+                padding-left: 4px;
+                height: 25px;
+                width: 250px;
+            }
+
+            #contactform textarea{
+                padding-left: 4px;
+                height: 200px;
+                width: 760px;
+            }
+
+            #contactform h1{
+                text-align: center;
+                color: black;
+            }
+
+            #gmaps{
+                float: center;
+            }
+
+        </style>
+
+        <!--external js function for newsletter email check-->
+        <script src="scripts/newsletter.js"></script>
+
+        <!--internal script function for formcheck-->
+        <script>
+            function formcheck() {
+                var x = document.forms["noemptyform"]["fname"].value;
+                    if (x == "") {
+                    alert("What's your name?");
+                    return false;
+                }
+                var x = document.forms["noemptyform"]["email"].value;
+                    if (x == "") {
+                    alert("Your email please!");
+                    return false;
+                }            
+                var x = document.forms["noemptyform"]["theme"].value;
+                    if (x == "") {
+                    alert("Theme must be filled out!");
+                    return false;
+                }
+                var x = document.forms["noemptyform"]["textarea"].value;
+                    if (x == "") {
+                    alert("You have to write something, right?");
+                    return false;
+                }
+                window.alert("Λάβαμε το μήνυμά σας!Σύντομα κάποιος εκπρόσωπός μας θα επικοινωνήσει μαζί σας!")
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div id="branding">
+                    <h1><span class="highlight">Lalo</span> Courier</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Αρχική Σελίδα</a></li>
+                        <li><a href="ourcompany.html">Η εταιρεία μας</a></li>
+                        <li><a href="calcprice.html">Υπολογισμός Κόστους</a></li>
+                        <li><a href="blog.html">Το Blog μας</a></li>
+                        <li class="current"><a href="contactus.html">Επικοινωνήστε μαζί μας</a></li>
+                    </ul>
+                </nav>                
+            </div>
+        </header>     
+
+        <section id="sectiontitle">
+            <div class="container">
+                <h1>Εξυπηρέτηση πελατών</span></h1>
+            </div>
+        </section>
+
+        <!--NEWSLETTER section-->
+        <section id="newsletter">
+            <div class="container">
+                <h1>Εγγραφείτε στο newsletter μας</h1>
+                <form name="newsform">
+                    <input type="email" name="email" placeholder="Enter Email">
+                    <input type="submit" value="Subscribe" class="button_1" onclick="ValidateEmail(document.newsform.email)"></input>
+                </form>
+            </div>
+        </section> 
+
+        <!--contact boxes.Info about location,phone numbers,email,working hours-->
+        <section id="boxes">
+            <div class="container">
+                <h1>Ελάτε σε επαφή μαζί μας!</h1><br>
+                <div class="box">
+                    <img src="img/locations.svg">
+                    <h2>Η διεύθύνση μας!</h2>
+                    <p>Aθήνα , Γλυφάδα , Παμβώτιδος 58 </p>
+                </div>
+                <div class="box">
+                    <img src="img/customer-service.svg">
+                    <h2>Καλέστε μας!</h2>
+                    <p><a href="tel:213007313" class="linktext">Στο σταθερό μας</a><br><a href="tel:6977156524" class="linktext">Στο κινητό μας </a></p>
+                </div>
+                <div class="box">
+                    <img src="img/email.svg">
+                    <h2>Στείλτε μας στο ηλεκτρονικό μας ταχυδρομείο!</h2>
+                    <p><a href="mailto:lalocourierservices@gmail.com" class="linktext">lalocourierservices@gmail.com</a></p>
+                </div>
+                <div class="box">
+                </div>
+                <div class="box">
+                    <img src="img/time-based.svg">
+                    <h2>Είμαστε ανοιχτά!<br></h2><p>Δευτέρα έως Παρασκευή : 08:00-20:00<p>
+                    <p>Σάββατο : 08:30 - 16:00</p>
+                </div>
+            </div>
+        </section>
+
+        <!--contact form for the customer-->
+        <section id="contactform">
+            <div class="container">
+                <h1>Διαφορετικά συμπληρώστε την παρακάτω φόρμα και ένας εκπρόσωπός μας θα σας εξυπηρετήσει!</h1>
+                <form name="noemptyform" onsubmit="return formcheck()">
+                    <div class="ss-item-required">
+                        <input type="text" placeholder="Ονοματεπώνυμο" id="fname"><br>
+                    </div>
+                    <div class="ss-item-required">
+                        <input type="email" placeholder="Email επικοινωνίας" id="email"><br>
+                    </div>
+                    <div class="ss-item-required">
+                        <input type="text" placeholder="Θέμα επικοινωνίας" id="theme"><br>
+                    </div>
+                    <div class="ss-item-required">
+                        <textarea placeholder="Πως μπορούμε να σας βοηθήσουμε;" id="textarea"></textarea><br>   
+                    </div>     
+                    <button type="theme" class="button_1">Submit</button>
+                    <form>
+                </form>
+            </div>
+        </section>
+
+        <!----------------------(google iframe)---------------------->
+        <section id="gmaps">
+            <div class="container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23778726.62005486!2d-6.102728814001676!3d43.32102918370443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb78f2474b9a45aa9!2sBig%20Ben!5e0!3m2!1sen!2sgr!4v1621800444574!5m2!1sen!2sgr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </section>
+
+        <!--html footer-->
+        <footer>
+            <p>Lalogiannis Web Design, Copyright &copy; 2021</p>
+        </footer>
+    </body>
+</html>

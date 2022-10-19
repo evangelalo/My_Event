@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <title>LaloCourier</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            /*Web responsive for desktop*/
+            @media (min-width: 1080px){
+                #boxes4 .box4 , #blogdetails .box4{
+                    width: 23%;
+                    padding: 10px;
+                }
+                #boxes4 .box4 img{
+                    width: 150px;
+                    height: 150px;
+                }
+                #boxes2 .box2{
+                    float: left;
+                    text-align: center;
+                    width: 48%;
+                    padding: 10px;
+                }
+                .box4 #boxheader{ 
+                    float: left;
+                }
+            }
+
+            /*Web responsive for tablet*/
+            @media (min-width: 768px){
+                header{
+                    font-size: large;
+                }             
+                body{
+                    font-size: large;
+                }
+                #boxes4 .box4 , #blogdetails .box4{
+                    width: 35%;
+                    padding: 20px;
+                }
+                #boxes4 .box4 img{
+                    width: 150px;
+                    height: 150px;
+                }
+                #boxes2 .box2{
+                    float: left;
+                    text-align: center;
+                    padding: 10px;
+                }
+
+            }
+            /*Web responsive for tablet*/
+            @media (max-width: 767px){
+            }
+            #pricetable{
+                margin-top: 20px;
+            }
+
+            .servicetable{
+                margin-top: 20px;
+                float: center;
+                width: 100%;
+                background-color:lightgray;
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+
+            #tablehead{
+                font-size: large;
+                font-weight: bold;
+                border: 1px solid black;
+                background-color: #e8491e;
+            }
+
+            th , td{
+                border: 0.5px solid;
+                padding: 5px;
+                text-align: left;
+                width: 80%;
+            }
+
+            #brand{
+                font-family: fantasy;
+            }
+
+        </style>
+        <script src="scripts/newsletter.js"></script>
+    </head>
+    <body>
+
+        <!--header same for all pages except the highlighted page (current class)-->
+        <header>
+            <div class="container">
+                <div id="branding">
+                    <h1><span class="highlight">Lalo</span> Courier</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li class="current"><a href="index.html">Αρχική Σελίδα</a></li>
+                        <li><a href="ourcompany.html">Η εταιρεία μας</a></li>
+                        <li><a href="calcprice.html">Υπολογισμός Κόστους</a></li>
+                        <li><a href="blog.html">Το Blog μας</a></li>
+                        <li><a href="contactus.html">Επικοινωνήστε μαζί μας</a></li>
+                    </ul>
+                </nav>                
+            </div>
+        </header>
+
+        <section id="sectiontitle">
+            <div class="container">
+                <h1>Καλωσήρθατε στην Νο.1 ταχυμεταφορική στο λεκανοπέδιο!</h1>
+            </div>
+        </section>
+
+        <!--NEWSLETTER section-->
+        <section id="newsletter">
+            <div class="container">
+                <h1>Εγγραφείτε στο newsletter μας</h1>
+                <form name="newsform">
+                    <input type="email" name="email" placeholder="Enter Email">
+                    <input type="submit" value="Subscribe" class="button_1" onclick="ValidateEmail(document.newsform.email)"></input>
+                </form>
+            </div>
+        </section>
+
+        <!---------------------------- who we are ---------------------------->
+
+        <section id="boxes2">
+            <div class="container">
+                <div class="box2">
+                    <h1 id="brand">LaloCourier</h1>
+                    <p>Η εταιρεία μας ιδρύθηκε το 1994 και εδρεύει στην Γλυφάδα Αττικής. Με διαρκή παρουσία
+                        στις καλύτερες μεταφορικές στην χώρα μας έχουμε καταφέρει να βραβευτούμε για αρκετές
+                        χρονιές ως η πιο αξιόπιστη εταιρεία στον κλάδο. Αυτό κυρίως οφείλεται στο άκρως 
+                        καταρτισμένο μας προσωπικό και τις πιο σύγχρονες μεθόδους μεταφοράς.
+                    </p>
+                </div>
+
+                <div class="box2">
+                    <h1>Βρείτε μας από κοντά!</h1>
+                    <p>Η διαχρονική εμπειρία μας αποτελεί κύριο συντελεστή στην επιτυχία μας. Δεδομένου αυτού
+                        σας καλούμε να μας επισκεφθείτε στον ανακαινισμένο μας χώρο ώστε να ενημερωθείτε
+                        για τις πληθώρες υπηρεσίες μας και να σας εξυπηρετήσουμε.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!---------------------------- services ---------------------------->
+        <section id="boxes4">
+            <div class="container">
+                <div class="box4">
+                    <img src="img/greececartoon.png">
+                    <h2 id="boxheader">Αποστολές εντός Αττικής</h2>
+                    <p>&#8226; Ομαδικές αποστολές δεμάτων και φακέλων</p>
+                    <p>&#8226; Αυθημερόν αποστολές</p>
+                    <p>&#8226; Αποστολές με εντολή παράδοσης Σαββάτου/Κυριακής/αργιών</p>
+                    <p>&#8226; Αντικαταβολή με επιστροφή χρημάτων την επόμενη μέρα</p>
+                    <p>&#8226; Είσπραξη επιταγών με επιστροφή χρημάτων σε δύο μέρες</p>
+                    <p>&#8226; Επιλογή συσκευασίας δεμάτων</p>
+                </div>
+                <div class="box4">
+                    <img src="img/shippingcart3.jpg">
+                    <h2 id="boxheader">Αποστολές εκτός Αττικής</h2>
+                    <p>&#8226; Ομαδικές αποστολές δεμάτων και φακέλων</p>
+                    <p>&#8226; Αυθημερόν αποστολές</p>
+                    <p>&#8226; Αποστολές με εντολή παράδοσης Σαββάτου/Κυριακής/αργιών</p>
+                    <p>&#8226; Αντικαταβολή με επιστροφή χρημάτων σε τρεις μέρες</p>
+                    <p>&#8226; Είσπραξη επιταγών με επιστροφή χρημάτων σε τέσσερεις μέρες</p>
+                    <p>&#8226; Επιλογή συσκευασίας δεμάτων</p>
+                </div>
+                <div class="box4">
+                    <img src="img/shippingcart2.jpg">
+                    <h2 id="boxheader">Αποστολές στο εξωτερικό</h2>
+                    <p>&#8226; Αποστολές σε συνεργασία με τις μεγαλύτερες διεθνής μεταφορικές</p>
+                    <p>&#8226; Προγραμματισμός παράδοσης </p>
+                    <p>&#8226; Ασφαλής συσκευασίες</p>
+                </div>
+                <div class="box4">
+                    <img src="img/studentcartoon.jpg">
+                    <h2 id="boxheader">Φοιτητικά πακέτα για όλους<br></h2>
+                    <p>&#8226; Μεταφορές και στο εξωτερικό</p>
+                    <p>&#8226; Γρήγορη εξυπηρέτηση</p>
+                    <p>&#8226; Προγραμματισμός παράδοσης ανάλογα με την χώρα προορισμού</p>
+                </div>
+            </div>
+        </section>
+
+        <!---------------------------- price table ---------------------------->
+        <section id="pricetable">
+            <div class="container">
+                <table class="servicetable">
+                    <caption id="tablehead">Βασικές Υπηρεσίες</caption>    
+                    <tr>
+                        <td>Παράδοση εντός Αττικής την επομένη εργάσιμη (έως 5 κιλά)</td>
+                        <td>3,50 ευρώ</td>
+                    </tr>
+                    <tr>                       
+                        <td>Παράδοση στην υπόλοιπη Ελλάδα την επομένη εργάσιμη</td>
+                        <td>8,50 ευρώ</td>
+                    </tr>
+                    <tr>
+                        <td>Αυθημερόν Παράδοση Αθήνα Κέντρο - Νότια Προάστια</td>
+                        <td>3,50 ευρώ</td>
+                    </tr>
+                    <tr>
+                        <td>Αυθημερόν Παράδοση Αθήνα Δυτικά  - Βόρεια Προάστια</td>
+                        <td>5,50 ευρώ</td>
+                    </tr>
+                    <tr>
+                        <td>Αυθημερόν Παράδοση Προάστια Αττικής</td>
+                        <td>7,50 ευρώ</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="container">
+                <table class="servicetable">
+                    <caption id="tablehead">Πρόσθετες υπηρεσιές</caption>
+                    <tr>
+                        <td>Αντικαταβολή</td>
+                        <td>2,50 ευρώ</td>>
+                    </tr>
+                    <tr>
+                        <td>Παράδοση πρωινή</td>
+                        <td>3,50 ευρώ</td>
+                    </tr>
+                    <tr>
+                        <td>Παράδοση Σάββατο</td>
+                        <td>2,50 ευρώ</td>>
+                    </tr>
+                    <tr>
+                        <td>Παράδοση Κυριακή</td>
+                        <td>8 ευρώ</td>
+                    </tr>
+                    <tr>
+                        <td>Παράδοση αργίες</td>
+                        <td>12 ευρώ</td>
+                    </tr>
+                    <tr>
+                        <td>Παράδοση σε δυσπρόσιτη περιοχή</td>
+                        <td>6 ευρώ</td>
+                    </tr>
+
+                </table>
+            </div>
+        </section>
+
+        <!--html footer-->
+        <footer>
+            <p>Lalogiannis Web Design, Copyright &copy; 2021</p>
+        </footer>
+
+    </body>
+</html>
