@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <title>LaloParty</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+
+            /*Web responsive for desktop*/
+            @media (min-width: 1080px){
+                .responsive {
+                    width: 49.99999%;
+                    margin: 6px 0;
+                }
+            }
+
+            /*Web responsive for tablet*/
+            @media (max-width: 1079px){
+                #doubleboxes .box2{
+                    width: 100%;
+                }
+
+                #quadboxes .box4, #gallery .box4gal{
+                    text-align: center;
+                    float: left;
+                    width: 42%;
+                    padding: 10px;
+                    margin-bottom: auto;
+                }
+
+                .responsive {
+                    width: 100%;
+                }
+
+                .clearfix:after {
+                content: "";
+                display: table;
+                clear: both;
+                }
+            }
+
+            /*Mobile view*/
+            @media (max-width: 768px){
+                #gallery .box4gal{
+                    text-align: center;
+                    float: left;
+                    width: 90%;
+                    padding: 10px;
+                    margin-bottom: auto;
+                }
+            }
+
+
+            /*Internal CSS*/
+            .box4 img{
+                width: 90%;
+            }
+
+            #branding{
+                font-family: fantasy;
+            }
+
+            #cinema{
+                width: 100%;
+                height: auto;
+            }
+
+            div.gallery {
+                border: 1px solid #ccc;
+            }
+
+            div.gallery:hover {
+                border: 1px solid #777;
+            }
+
+            div.gallery img {
+                width: 100%;
+                height: auto;
+            }
+
+            div.desc {
+                padding: 15px;
+                text-align: center;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            .responsive {
+                padding: 0 6px;
+                float: left;
+                width: 24.99999%;
+            }
+
+        </style>
+
+        <script>
+            /*Open new tab*/
+            function newtab() 
+	        { 
+	            window.open("ourcompany.html"); 
+	        } 
+            function newtab2() 
+	        { 
+	            window.open("subscribedusers.php"); 
+	        } 
+        </script>
+
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <div id="branding">
+                    <h1><span class="highlight">Lalo</span> Party</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">Αρχική Σελίδα</a></li>
+                    <li><a href="ourcompany.html">Η εταιρεία μας</a></li>
+                    <li><a href="calcprice.html">Υπολογισμός Κόστους</a></li>
+                    <li><a href="contactus.html">Επικοινωνήστε μαζί μας</a></li>
+                    <li><a href="newsletter.html">Εγγραφή στο Newsletter</a></li>
+                </ul>
+            </nav>  
+        </header>
+        <section id="sectiontitle">
+            <div class="container">
+            </div>
+        </section>
+        <section id="bottomtitle">
+            <div class="container">
+                <h1></h1>
+            </div>
+        </section>
+
+        <!--Who We Are-->
+        <section id="doubleboxes">
+            <div class="container">
+                <div class="box2">
+                    <h1 id="branding">LaloParty</h1>
+                    <p>Η εταιρεία μας εξειδικεύεται στην διοργάνωση εκδηλώσεων, τόσο εταιρικών όσο και προσωπικών.
+                        Το προσωπικό μας αναλαμβάνει την διοργάνωση των πλέον απαιτητικών εκδηλώσεων, διασφαλίζοντας
+                        τα μέγιστα επιθυμητά αποτελέσματα. Οι προσωπικές σας στιγμές αποτελούν την ίδια και μεγαλύτερη
+                        έννοια και για μας και έτσι φροντίζουμε να σας παρέχουμε τις καλύτερες δυνατές υπηρεσίες
+                        με φροντίδα και αφοσίωση.
+                    </p>
+                </div>
+                <div class="box2">
+                    <h1>Ελάτε στο χώρο μας!</h1>
+                    <p>Τα γραφεία μας στεγάζονται στην Αργυρούπολη Αττικής, επί της λεωφόρου Βουλιαγμένης. Οι άνθρωποί μας
+                        έχουν την γνώση έτσι ώστε να σας παρέχουν τις καλύτερες συμβουλές για την άριστη διεξαγωγή
+                        κάθε είδους εκδήλωσης, σε κάθε γωνιά της χώρας μας, εμπνευσμένοι από τις παραδόσεις κάθε τόπου.
+                    </p>
+                </div>
+                <video id="cinema" controls>
+                    <source src="promo.mp4" type="video/mp4">
+                    <source src="promo.ogg" type="video/ogg">
+                </video>
+            </div>
+
+        </section>
+
+        <!--Services-->
+
+        <section id="quadboxes">
+            <div class="container">
+
+                <div class="box4">
+                    <img src="img/prosound.jpg">
+                    <h2 id="boxheader">Ενοικίαση ηχητικού εξοπλισμού</h2>
+                    <p>Η εταιρεία μας συνεργάζεται με τους μεγαλύτερους κατασκευαστές ηχητικών συστημάτων
+                        παγκοσμίως, παρέχοντας σας τις καλύτερες δυνατές λύσεις προσανατολισμένες για χρήση
+                        σε οποιαδήποτε μορφή εκδήλωσης. Τα ηχητικά μας συστήματα αναβαθμίζονται συνεχώς, έτσι 
+                        ώστε να συμβαδίζουν με τις τελευταίες τεχνολογικές τάσεις της αγοράς.<br>
+                        Επίσης επιμένουμε στην εξωτερική άρτια εμφάνιστη του εξοπλισμού μας, ώστε να σας παρέχουμε
+                        πάντοτε το δυνατότερο αισθητικό αποτέλεσμα στο χώρο.
+                    </p>
+                </div>
+
+                <div class="box4">
+                    <img src="img/prolight.jpg">
+                    <h2 id="boxheader">Ενοικίαση Φωτισμού</h2><br>
+                    <p>Η LaloParty διαμορφώνει το φωτισμό της εκδήλωση σας ώστε να ανταποκρίνεται άριστα στο 
+                        χαρακτήρα της εκδήλωσης σας. Το μεγάλο πλήθος μηχανημάτων τελευταίας τεχνολογίας
+                        σε συνδιασμό με τις συνεχώς ανανεωμένες ιδέες μας σας εγγυάται άριστο οπτικό αποτέλεσμα.
+                    </p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    
+                </div>
+
+                <div class="box4">
+                    <img src="img/food.jpg">
+                    <h2 id="boxheader">Υπηρεσίες Catering</h2><br>
+                    <p>Το φαγητό αποτελεί ίσως τον μεγαλύτερο παράγοντα της επιτυχίας μιας συνεδρίας. Γι' αυτό το λόγο έχουμε 
+                        φροντίσει να εντάξουμε στην ομάδα μας τους καλύτερους σεφ της χώρας μας, που σε συνεργασία με το 
+                        άρτια καταρτισμένο προσωπικό μας σας εγγυώνται τις καλύτερες γεύσεις που σας υποσχόμαστε ότι Θα
+                        τις θυμάστε για καιρό.
+                    </p>
+                </div>
+
+                <div class="box4">
+                    <img src="img/lalonikki.jpg">
+                    <h2 id="boxheader">Παροχή Προσωπικού</h2><br>
+                    <p>Οι παραπάνω υπηρεσίες για να εκπληρωθούν χρειάζονται και το απαραίτητο προσωπικό. Η ομάδα μας αποτελείται
+                        από εκατοντάδες εργαζόμενους σε όλα τα πόστα, οι οποίοι ειναι ειδικά εκπαιδευμένοι ώστε να φροντίζουν
+                        στην άριστη διεξαγωγή οποιαδήποτε δεξίωσης.
+                    </p>
+
+                </div>
+            </div>
+        </section>
+        <section>
+            <input type="button" class="redirect1" value="More Info About Our Company" class="button_1" onclick=newtab()><br>
+
+        </section>
+
+        <!--Image Gallery-->
+        <section id="gallery">
+            <div class="container">
+                <div class="box4gal">
+                    <div class="gallery">
+                    <a target="_blank" href="img/synedria.jpeg">
+                        <img src="img/synedria.jpeg" width="600" height="400">
+                    </a>
+                    </div>
+                </div>
+
+                <div class="box4gal">
+                    <div class="gallery">
+                    <a target="_blank" href="img/wed.jpeg">
+                        <img src="img/wed.jpeg" width="600" height="400"><br><br><br><br>
+                    </a>
+                    </div>
+                </div>
+
+                <div class="box4gal">
+                    <div class="gallery">
+                    <a target="_blank" href="img/synedria2.jpg">
+                        <img src="img/synedria2.jpg" width="600" height="400">
+                    </a>
+                    </div>
+                </div>
+
+                <div class="box4gal">
+                    <div class="gallery">
+                    <a target="_blank" href="img/synedria3.jpg">
+                        <img src="img/synedria3.jpg" width="600" height="400">
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--html footer-->
+        <footer>
+            <div class="container">
+                <input type="button" class="button_1" value="Subscribed Users" onclick="newtab2()"/>
+                <p>Lalogiannis Web Design, Copyright &copy; 2021</p>
+            </div>
+        </footer>
+    </body>
+</html>

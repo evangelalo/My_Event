@@ -1,0 +1,197 @@
+/******************************************Global Styles******************************************/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    background-color: rgba(255, 255, 255, 0.767);
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+header{
+    background-color: rgb(24, 22, 126);
+    background-image: url(img/conf1.jpeg);
+    color: #499700;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #ffffff 3px solid;
+}
+
+header a{
+    color: #ffffff;
+    text-decoration: underline;
+    font-size: 12px;
+}
+
+header ul{
+    margin: 0;
+    padding: 0;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding{
+    color: #ffffff;
+    float: left;
+}
+
+header #branding h1{
+    font-family: fantasy;
+    margin: 10px;
+    text-shadow: 5px 5px black;
+
+}
+
+header nav{
+    float: right;
+    margin-top: 25px;
+}
+
+header .highlight , header .current a{
+    color: #00ff6a;
+    font-weight: bold;
+}
+
+header a:hover{
+    color: #00ff6a;
+    font-weight: bold;
+}
+
+ul{
+    margin: 100;
+    padding: 0;
+}
+
+/*Section Title*/
+#sectiontitle{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(img/Untitled-1.jpg);
+    text-align: center;
+    text-shadow: 2px 2px black;
+    font-size: large;
+    color: #ffffff;
+    height: 300px;
+    border-bottom: #ffffff 3px solid;
+    text-shadow: #00ff6a ;
+}
+
+#bottomtitle{
+    height: 70px;
+    background-color: rgb(24, 22, 126);
+    text-decoration: overline;
+}
+
+/*footer*/
+footer{
+    padding: 5px;
+    margin-top: 20px;
+    color: #ffffff;
+    text-align: center;
+    background-color: #7400c2;
+}
+
+/*Button*/
+.button_1, .redirect1{
+    font-weight: bold;
+    height: 30px;
+    background: #004fe0;
+    border-radius: 6px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    padding-left: 20px;
+    padding-left: 20px;
+    margin: auto;
+    display: block;
+}
+
+#doubleboxes ,#tripleboxes, #quadboxes{
+    margin-top: 20px;
+}
+
+table{
+    border-style: dashed;
+    background-color: #00ff6a ;
+    border-collapse: collapse;
+}
+
+/*NewsLetter*/
+#newsletter{
+    padding: 15px;
+    color: #ffffff;
+    background-color: rgb(24, 22, 126);
+}
+
+#newsletter h1{
+    float: left;
+}
+
+#newsletter form{
+    float: right;
+    margin-top: 15px;
+    color: white;
+}
+
+#newsletter input[type="email"]{
+    padding: 4px;
+    height: 20px;
+    width: 250px;
+}
+
+
+/*Web responsive for desktop*/
+@media (min-width: 1080px){
+    #quadboxes .box4, #gallery .box4gal{
+        float: left;
+        text-align: center;
+        width: 23%;
+        padding: 10px;
+    }
+
+    #tripleboxes .box3{
+        width: 31%;
+        padding: 10px;
+        float: left;
+        text-align: center;
+    }
+    /*index*/
+    #doubleboxes .box2{
+        float: left;
+        text-align: center;
+        width: 48%;
+        padding: 10px;
+    }
+}
+
+/*Web responsive for tablet mobile*/
+@media (max-width: 1079px){
+    #tripleboxes .box3{
+        float: left;
+        text-align: center;
+        width: 90%;
+        padding: 10px;
+    }
+
+    #tripleboxes .box3{
+        float: left;
+        text-align: center;
+    }
+
+    /*index*/
+    #doubleboxes .box2{
+    float: left;
+    text-align: center;
+    width: 90%;
+    padding: 10px;
+    }
+                
+}

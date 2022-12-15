@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <title>LaloParty</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            /*Internal*/
+            .redirect2{
+                    font-weight: bold;
+                    height: 30px;
+                    background: #7400c2;
+                    border-radius: 6px;
+                    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+                    padding-left: 20px;
+                    padding-left: 20px;
+                }
+        </style>
+        <script>
+            /*Open new tab for subscribing*/
+            function newtab1() 
+	        { 
+	            window.open("newsletter.php"); 
+	        } 
+        </script>
+
+    </head>
+    <body>       
+        <header>
+            <div class="container">
+                <div id="branding">
+                    <h1><span class="highlight">Lalo</span> Party</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Αρχική Σελίδα</a></li>
+                        <li class="current"><a href="ourcompany.html">Η εταιρεία μας</a></li>
+                        <li><a href="calcprice.html">Υπολογισμός Κόστους</a></li>
+                        <li><a href="contactus.html">Επικοινωνήστε μαζί μας</a></li>
+                        <li><a href="newsletter.html">Εγγραφή στο Newsletter</a></li>
+                    </ul>
+                </nav>  
+            </div>
+        </header>
+
+        <section id="sectiontitle">
+            <div class="container">
+                <h1>Η εταιρεία μας</h1>
+            </div>
+        </section>
+
+        <!--NEWSLETTER section-->
+        <section id="newsletter">
+            <div class="container">
+                <h1>Εγγραφείτε στο newsletter μας</h1>
+                <form name="newsform">
+                    <input type="button" value="Redirect" class="redirect2" onclick="newtab1()"/>
+                </form>
+            </div>
+        </section>
+
+        <section id="tripleboxes">
+            <div class="container">
+
+                <div class="box3">
+                <h2 id="boxheader">Η φιλοσοφία μας</h2>
+                <p>Η LaloParty πλαισιώνεται από μία επιλεγμένη ομάδα διακεκριμένων επαγγελματιών
+                    και ειδικεύεται στο σχεδιασμό και την οργάνωση εκδηλώσεων υψηλών απαιτήσεων. Τα μέλη μας γνωρίζουν σε 
+                    βάθος τις υπηρεσίες πολυτελούς διαμονής και φιλοξενίας και διαχειρίζονται με επαγγελματισμό τη 
+                    διοργάνωση συνεδρίων και εταιρικών εκδηλώσεων. Ακόμα, οι συνεργάτες μας έχουν εξαίρετες οργανωτικές 
+                    ικανότητες και καλλιεργημένη αντίληψη περί αισθητικής. Εστιάζουν με προσοχή στην κάθε λεπτομέρεια, 
+                    επιδεικνύουν αφοσίωση και ενθουσιασμό, δεσμεύονται στην κάθε τους δράση, με πάθος και όραμα.</p>
+                </div>
+
+                <div class="box3">
+                    <h2 id="boxheader">Το όραμά μας</h2>
+                    <p>Μέσα απ την αδιάκοπη δουλειά και τον επαγγελματισμό μας, όραμα μας αποτελεί η πλήρης ικανοποίηση
+                        σας μέσα απ το έργο μας και η κατάκτηση της κορυφής στον τομέα νικώντας τον  ανταγωνισμό. 
+                        Μεγάλος παράγοντας της επιτυχίας αυτής αποτελεί η συνεχής εκπαίδευση
+                        του προσωπικού μας και η άψογη συνεργασία με τους συνεργάτες μας.
+                    </p>
+
+                </div>
+
+                <div class="box3">
+                    <h2 id="boxheader">Ο στόχος μας</h2>
+                    <p>Η εταιρεία μας έχει ως απώτερο στόχο την διοργάνωση κάθε είδους εκδήλωσης στο χώρο με προδιαγραφές
+                        που μας φέρνουν ένα βήμα παραπάνω απ τον ανταγωνισμό. Οι συνεχώς αυξανόμενες ανάγκες του χώρου, καθώς 
+                        και οι απαιτήσες σας αποτελόυν πρόκληση για εμάς ώστε να εκτέλεσουμε με απόλυτη επιτυχία την κάθε σας
+                        επιθυμία.
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!--html footer-->
+        <footer>
+            <p>Lalogiannis Web Design, Copyright &copy; 2021</p>
+        </footer>
+    </body>
+</html>

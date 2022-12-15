@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <title>LaloParty</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            #newsletterform{
+                padding-top: 40px;
+                padding-bottom: 40px;
+            }
+            #newsletterform h1{
+                text-align: center;
+        
+            }
+            #newsletterform #name,#email{
+                width: 35%;
+            }
+        </style>
+
+        <script>
+
+        </script>
+    </head>
+    <body>     
+
+        <header>
+            <div class="container">
+                <div id="branding">
+                    <h1><span class="highlight">Lalo</span> Party</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Αρχική Σελίδα</a></li>
+                        <li><a href="ourcompany.html">Η εταιρεία μας</a></li>
+                        <li><a href="calcprice.html">Υπολογισμός Κόστους</a></li>
+                        <li><a href="contactus.html">Επικοινωνήστε μαζί μας</a></li>
+                        <li class="current"><a href="newsletter.html">Εγγραφή στο Newsletter</a></li>
+                    </ul>
+                </nav>  
+            </div>
+        </header>
+
+        <section id="sectiontitle">
+            <div class="container">
+                <h1>Εγγραφή στο newsletter μας!</h1>
+            </div>
+        </section>
+
+        <section id="bottomtitle">
+            <div class="container">
+                <h1></h1>
+            </div>
+        </section>
+
+        <section id="newsle">
+            <div class="container">
+
+            </div>
+        </section>
+
+        <section id="newsletterform">
+            <div class="container">
+                <h1>Εγγραφείτε στο newsletter για να λαμβάνετε άμεσα όλα τα νέα που αφορούν την εταιρεία μας!</h1></br>
+                <fieldset>
+                    <legend>Sign up for the Newsletter</legend>
+                    <form name="newsform" action="regnews.php" method="POST">
+                        <input type="text" placeholder="Όνομα χρήστη" name="username" id="username"/></br></br>
+                        <input type="text" placeholder="Ονοματεπώνυμο" name="fullname" id="fullname"><br></br>
+                        <input type="email" placeholder="Email" name="email" id="email"/></br></br>
+                        <button type="submit" name=submit class="button_1" value="Submit">Submit</button>
+                    </form>
+                </fieldset>
+            </div>
+        </section>
+
+        <!--html footer-->
+        <footer>
+            <p>Lalogiannis Web Design, Copyright &copy; 2021</p>
+        </footer>
+
+
+    </body>
+</html>

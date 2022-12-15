@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <title>LaloParty</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            /*Web responsive for desktop*/
+            @media (min-width: 1080px){
+                #calculateprice .box4{
+                float: left;
+                text-align: center;
+                width: 23%;
+                padding: 10px; 
+                }
+                .video{
+                width: 100%;
+                }
+            }
+
+            /*Web responsive for tablet*/
+            @media (max-width: 1079px){
+                #calculateprice .box4{
+                float: left;
+                text-align: center;
+                width: 45%;
+                padding: 10px; 
+                }
+            }
+
+            /*Web responsive mobile*/
+            @media (max-width: 640px){
+                #calculateprice .box4{
+                float: left;
+                text-align: center;
+                width: 95%;
+                padding: 10px; 
+                }
+            }
+            /*Internal Css*/
+
+            #calculateprice p{
+                text-align: center;
+            }
+
+            .box #costresult{
+                border-style: none;
+                text-align: center;
+                font-size: x-large;
+            }
+            .container .box{
+                text-align: center;
+                padding: 10px;
+            }
+
+            .container .box4 img,#money{
+                width: 150px;
+                height: 150px;
+            }  
+
+        </style>
+        <script src="calculation.js"></script>
+        
+    </head>
+    <body>     
+
+        <header>
+            <div class="container">
+                <div id="branding">
+                    <h1><span class="highlight">Lalo</span> Party</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Αρχική Σελίδα</a></li>
+                        <li><a href="ourcompany.html">Η εταιρεία μας</a></li>
+                        <li class="current"><a href="calcprice.html">Υπολογισμός Κόστους</a></li>
+                        <li><a href="contactus.html">Επικοινωνήστε μαζί μας</a></li>
+                        <li><a href="newsletter.html">Εγγραφή στο Newsletter</a></li>
+                    </ul>
+                </nav>  
+            </div>
+        </header>
+
+        <section id="sectiontitle">
+            <div class="container">
+                <h1>Υπολογισμός Κόστους Υπηρεσιών Συνεδρίου</h1>
+            </div>
+        </section>
+
+        <section id="bottomtitle">
+            <div class="container">
+                <h1></h1>
+            </div>
+        </section>
+
+        <section id="calculateprice">
+            <div class="container">
+                <p>Θα χαρούμε πολύ να μας αναθέσετε την κάλυψη της εκδήλωσής σας. Εάν θέλετε να μάθετε πληροφορίες σχετικά με το κόστος
+                    μπορείτε να έρθετε σε επικοινωνία μαζί μας <a href="contactus.html">εδώ</a>. Σε διαφορετική περίπτωση στην παρακάτω 
+                    φόρμα συμπληρώστε τα αντίστοιχα πεδία.
+                </p>
+
+                <div class="box4">
+                    <img src="img/famous.jpg">
+                    <h2>Πλήθος παρευρισκόμενων.</h2><br><br>
+                    <input type="number" id="people" placeholder="Πλήθος">
+                </div>
+
+                <div class="box4">
+                    <img src="img/stuffcart.jpg">
+                    <h2>Πλήθος προσωπικού.<br><br></h2><br><br>
+                    <input type="number" id="stuff" placeholder="Προσωπικό">
+                </div>
+
+                <div class="box4">
+                    <img src="img/calendar.png">
+                    <h2>Ημέρες διαρκείας του συνεδρίου.</h2><br><br>
+                    <input type="number" id="days" placeholder="Ημέρες">
+                </div>
+
+                <div class="box4">
+                    <img src="img/click.jpg">
+                    <h2>Πατήστε εδώ για να μάθετε το τελικό ποσό!</h2><br><br>
+                    <button type="theme" class="button_1" onclick="result()">Submit</button>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="box">
+                </div>
+                <div class="box">
+                    <img id="money" src="img/moneyholding.jpeg">
+                    <h2>To απαιτούμενο ποσό ειναι:</h2>
+                    <textarea id="costresult"></textarea>
+                </div>
+            </div>
+        </section>
+
+
+        <!--html footer-->
+        <footer>
+            <p>Lalogiannis Web Design, Copyright &copy; 2021</p>
+        </footer>

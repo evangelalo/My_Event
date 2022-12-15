@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <title>LaloParty</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            /*Web responsive for desktop*/
+            @media (min-width: 1080px){
+                #quadboxes .box4{
+                    float: left;
+                    width: 23%;
+                    padding: 10px;               
+                }
+
+                #gmaps{
+                    margin-top: 20px;
+                    margin-left: 250px;
+                }
+
+                #quadboxes .box4 img{
+                    width: 100px;
+                    height: 100px;
+                }
+
+                #contactform textarea{
+                padding-left: 4px;
+                height: 200px;
+                width: 760px;
+            }
+            }
+
+            /*Web responsive for tablet mobile*/
+            @media (max-width: 1079px){
+                #quadboxes .box4{
+                    float: left;
+                    width: 46%;
+                    padding: 10px; 
+                    text-align: center;              
+                }
+                #quadboxes .box4 img{
+                    width: 100px;
+                    height: 100px;
+                }
+
+            }
+            @media (max-width: 640px){
+                #quadboxes .box4{
+                    float: left;
+                    width: 95%;
+                    padding: 10px; 
+                    text-align: center;              
+                }
+            }
+            /*Internal Css*/
+            /*-----------------HOVER------------------*/
+            #quadboxes .box4 a:link{
+                color: green; 
+                background-color: transparent; 
+                text-decoration: none;
+            }
+                
+            #quadboxes .box4 a:visited{
+                color: pink;
+                background-color: transparent;
+                text-decoration: none;
+            }
+                
+            #quadboxes .box4 a:hover{
+                color: red;
+                background-color: transparent;
+                text-decoration: underline;
+            }
+                
+            #quadboxes .box4 a:active{
+                color: yellow;
+                background-color: transparent;
+                text-decoration: underline;
+            }
+
+            #contactform{
+                padding: 15px;
+            }
+
+            #contactform input{
+                padding-left: 4px;
+                height: 25px;
+                width: 250px;
+            }
+
+            #contactform textarea{
+                padding-left: 4px;
+                height: 200px;
+                width: 760px;
+            }
+
+            #quadboxes h1{
+                text-align: center;
+                color: black;
+            }
+
+            #gmaps{
+                float: center;
+            }
+
+        </style>
+        <!--internal script function for formcheck-->
+        <script>
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div id="branding">
+                    <h1><span class="highlight">Lalo</span> Party</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Αρχική Σελίδα</a></li>
+                        <li><a href="ourcompany.html">Η εταιρεία μας</a></li>
+                        <li><a href="calcprice.html">Υπολογισμός Κόστους</a></li>
+                        <li class="current"><a href="contactus.html">Επικοινωνήστε μαζί μας</a></li>
+                        <li><a href="newsletter.html">Εγγραφή στο Newsletter</a></li>
+                    </ul>
+                </nav>                
+            </div>
+        </header>     
+
+        <section id="sectiontitle">
+            <div class="container">
+                <h1>Εξυπηρέτηση πελατών</span></h1>
+            </div>
+        </section>
+        <section id="bottomtitle">
+            <div class="container">
+                <h1></h1>
+            </div>
+        </section>
+
+        <!--contact boxes.Info about location,phone numbers,email,working hours-->
+        <section id="quadboxes">
+            <div class="container">
+                <h1>Θα χαρούμε να επικοινωνήσετε μαζί μας με email ή τηλεφωνικά!</h1><br>
+                <div class="box4">
+                    <img src="img/locations.svg">
+                    <h2>Η διεύθύνση μας!</h2><br><br>
+                    <p>Aθήνα , Αργυρούπολη , Λεωφόρος Βουλιαγμένης 0 </p>
+                </div>
+                <div class="box4">
+                    <img src="img/customer-service.svg">
+                    <h2>Καλέστε μας!</h2><br><br>
+                    <p><a href="tel:213007313" class="linktext">Στο σταθερό μας</a><br><a href="tel:6977156524" class="linktext">Στο κινητό μας </a></p>
+                </div>
+                <div class="box4">
+                    <img src="img/email.svg">
+                    <h2>Στείλτε μας στο ηλεκτρονικό μας ταχυδρομείο!</h2>
+                    <p><a href="mailto:lalocourierservices@gmail.com" class="linktext">lalopartyservices@hotmail.com</a></p>
+                </div>
+                <div class="box4">
+                    <img src="img/time-based.svg">
+                    <h2>Είμαστε ανοιχτά!<br><br><br></h2><p>Δευτέρα έως Παρασκευή :<br> 08:00-20:00<p>
+                    <p>Σάββατο : 08:30 - 16:00</p>
+                </div>
+            </div>
+        </section>
+
+        <!--contact form for the customer-->
+        <section id="contactform">
+            <div class="container">
+                <h1>Διαφορετικά παρακαλούμε συμπληρώστε την παρακάτω φόρμα με τα στοιχεία σας και με κάποιες πρώτες σκέψεις 
+                    για την εκδήλωση που σας ενδιαφέρει.!</h1>
+                <form name="noemptyform" action="usercontact.php" method="POST">
+                    <input type="text" placeholder="Ονοματεπώνυμο" name="name" id="name"><br>
+                    <input type="email" placeholder="Email επικοινωνίας" name="email" id="email"><br>
+                    <input type="text" placeholder="Θέμα επικοινωνίας" name="subject" id="subject"><br>
+                    <textarea placeholder="Πως μπορούμε να σας βοηθήσουμε;" name="message" id="message"></textarea><br>   
+                    <button type="theme" class="button_1">Submit</button>
+                </form>
+            </div>
+        </section>
+
+        <!----------------------(google iframe)---------------------->
+        <section id="gmaps">
+            <div class="container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23778726.62005486!2d-6.102728814001676!3d43.32102918370443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb78f2474b9a45aa9!2sBig%20Ben!5e0!3m2!1sen!2sgr!4v1621800444574!5m2!1sen!2sgr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </section>
+
+        <!--html footer-->
+        <footer>
+            <p>Lalogiannis Web Design, Copyright &copy; 2021</p>
+        </footer>
+    </body>
+</html>
